@@ -1,0 +1,150 @@
+body{
+margin:0;
+font-family:Arial;
+background:#07070c;
+color:white;
+overflow-x:hidden;
+}
+
+/* NAV */
+header{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+padding:15px 25px;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(12px);
+z-index:1000;
+border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+nav a{
+color:white;
+margin:0 10px;
+text-decoration:none;
+opacity:0.7;
+}
+nav a:hover{opacity:1;}
+
+/* SECTIONS */
+section{
+padding:100px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+/* SCROLL ANIMATION */
+.hidden{
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* BUTTON */
+.btn{
+display:inline-block;
+padding:10px 20px;
+background:#25D366;
+color:white;
+border-radius:8px;
+text-decoration:none;
+margin-top:10px;
+}
+
+/* PRICING */
+.pricing{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.price-box{
+background:rgba(255,255,255,0.06);
+padding:25px;
+border-radius:15px;
+text-align:center;
+transition:0.3s;
+}
+
+.price-box:hover{
+transform:scale(1.05);
+}
+
+/* GALLERY */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+border-radius:12px;
+cursor:pointer;
+transition:0.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* WHATSAPP + CALL */
+.whatsapp,.call{
+position:fixed;
+right:20px;
+padding:15px;
+border-radius:50%;
+color:white;
+text-decoration:none;
+font-size:18px;
+z-index:1000;
+}
+
+.whatsapp{bottom:20px;background:#25D366;}
+.call{bottom:80px;background:#007bff;}
+
+/* SLIDESHOW */
+.slideshow{
+position:relative;
+height:100vh;
+overflow:hidden;
+}
+
+.slide{
+position:absolute;
+width:100%;
+height:100%;
+background-size:cover;
+background-position:center;
+opacity:0;
+transition:1.5s;
+filter:brightness(60%);
+}
+
+.slide.active{
+opacity:1;
+}
+
+.hero-text{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+z-index:2;
+}
+
+.hero-text h1{
+font-size:55px;
+}
+
+.hero-text p{
+opacity:0.8;
+}
