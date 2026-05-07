@@ -148,3 +148,78 @@ font-size:55px;
 .hero-text p{
 opacity:0.8;
 }
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+
+  .hero h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+ 
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 14px;
+    margin: 5px;
+  }
+
+
+  section {
+    padding: 70px 15px;
+  }
+
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+
+  .pricing {
+    grid-template-columns: 1fr;
+  }
+
+  .price-box {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  
+  .track img {
+    width: 200px;
+    height: 280px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+}
